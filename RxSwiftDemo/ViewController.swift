@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         let temp = UITableView(frame: CGRect.zero, style: .plain)
         temp.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         temp.dataSource = self
+        temp.delegate = self
         return temp
     }()
 
@@ -28,7 +29,6 @@ class ViewController: UIViewController {
     }
 }
 
-
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10;
@@ -41,6 +41,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.navigationController?.pushViewController(SimpleValidationViewController(), animated: true)
     }
 }
