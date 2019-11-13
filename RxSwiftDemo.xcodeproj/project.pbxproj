@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AB8A0B8A26E6F1D565030349 /* Pods_RxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679B347276729EE70F5E2624 /* Pods_RxSwiftDemo.framework */; };
+		DC0EE9112370194C00FABF29 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EE90F2370194C00FABF29 /* NumbersViewController.swift */; };
+		DC0EE9122370194C00FABF29 /* NumbersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC0EE9102370194C00FABF29 /* NumbersViewController.xib */; };
 		DC1CB49A2356C53C0034E0F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB4992356C53C0034E0F6 /* AppDelegate.swift */; };
 		DC1CB49C2356C53C0034E0F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB49B2356C53C0034E0F6 /* SceneDelegate.swift */; };
 		DC1CB49E2356C53C0034E0F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB49D2356C53C0034E0F6 /* ViewController.swift */; };
 		DC1CB4A12356C53C0034E0F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1CB49F2356C53C0034E0F6 /* Main.storyboard */; };
 		DC1CB4A32356C53D0034E0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1CB4A22356C53D0034E0F6 /* Assets.xcassets */; };
 		DC1CB4A62356C53D0034E0F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1CB4A42356C53D0034E0F6 /* LaunchScreen.storyboard */; };
+		DC651C96237A9637002E99B7 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC651C95237A9637002E99B7 /* ExampleViewController.swift */; };
+		DC718020237BD58800EE82C1 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71801F237BD58800EE82C1 /* ImagePickerViewController.swift */; };
+		DC7184E3237BF33E00EE82C1 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7184E2237BF33E00EE82C1 /* SimpleTableViewController.swift */; };
+		DC7184E6237C09DB00EE82C1 /* SimpleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7184E5237C09DB00EE82C1 /* SimpleTableSectionViewController.swift */; };
 		DCEA17862356FAD7008A923B /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA17852356FAD7008A923B /* SimpleValidationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		679B347276729EE70F5E2624 /* Pods_RxSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F1A95C89CF7965691008D6 /* Pods-RxSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DC0EE90F2370194C00FABF29 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		DC0EE9102370194C00FABF29 /* NumbersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumbersViewController.xib; sourceTree = "<group>"; };
 		DC1CB4962356C53C0034E0F6 /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1CB4992356C53C0034E0F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC1CB49B2356C53C0034E0F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,10 @@
 		DC1CB4A22356C53D0034E0F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC1CB4A52356C53D0034E0F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC1CB4A72356C53D0034E0F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC651C95237A9637002E99B7 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		DC71801F237BD58800EE82C1 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		DC7184E2237BF33E00EE82C1 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		DC7184E5237C09DB00EE82C1 /* SimpleTableSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableSectionViewController.swift; sourceTree = "<group>"; };
 		DCEA17852356FAD7008A923B /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		E0F1B44B6CF65C8B80A87CE4 /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +73,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DC192A4123700BE9000FEB3C /* SimpleValidation */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA17852356FAD7008A923B /* SimpleValidationViewController.swift */,
+			);
+			path = SimpleValidation;
+			sourceTree = "<group>";
+		};
+		DC192A4623700C2D000FEB3C /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EE90F2370194C00FABF29 /* NumbersViewController.swift */,
+				DC0EE9102370194C00FABF29 /* NumbersViewController.xib */,
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
 		DC1CB48D2356C53C0034E0F6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +114,50 @@
 				DC1CB4992356C53C0034E0F6 /* AppDelegate.swift */,
 				DC1CB49B2356C53C0034E0F6 /* SceneDelegate.swift */,
 				DC1CB49D2356C53C0034E0F6 /* ViewController.swift */,
-				DCEA17852356FAD7008A923B /* SimpleValidationViewController.swift */,
+				DC651C94237A9615002E99B7 /* Example */,
+				DC192A4623700C2D000FEB3C /* Numbers */,
+				DC192A4123700BE9000FEB3C /* SimpleValidation */,
+				DC71801E237BD55500EE82C1 /* ImagePicker */,
+				DC7184E1237BF31300EE82C1 /* SimpleTabbleView */,
+				DC7184E4237C099D00EE82C1 /* SimpleTableSectioned */,
 				DC1CB49F2356C53C0034E0F6 /* Main.storyboard */,
 				DC1CB4A22356C53D0034E0F6 /* Assets.xcassets */,
 				DC1CB4A42356C53D0034E0F6 /* LaunchScreen.storyboard */,
 				DC1CB4A72356C53D0034E0F6 /* Info.plist */,
 			);
 			path = RxSwiftDemo;
+			sourceTree = "<group>";
+		};
+		DC651C94237A9615002E99B7 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				DC651C95237A9637002E99B7 /* ExampleViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		DC71801E237BD55500EE82C1 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DC71801F237BD58800EE82C1 /* ImagePickerViewController.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		DC7184E1237BF31300EE82C1 /* SimpleTabbleView */ = {
+			isa = PBXGroup;
+			children = (
+				DC7184E2237BF33E00EE82C1 /* SimpleTableViewController.swift */,
+			);
+			path = SimpleTabbleView;
+			sourceTree = "<group>";
+		};
+		DC7184E4237C099D00EE82C1 /* SimpleTableSectioned */ = {
+			isa = PBXGroup;
+			children = (
+				DC7184E5237C09DB00EE82C1 /* SimpleTableSectionViewController.swift */,
+			);
+			path = SimpleTableSectioned;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1CB4A62356C53D0034E0F6 /* LaunchScreen.storyboard in Resources */,
+				DC0EE9122370194C00FABF29 /* NumbersViewController.xib in Resources */,
 				DC1CB4A32356C53D0034E0F6 /* Assets.xcassets in Resources */,
 				DC1CB4A12356C53C0034E0F6 /* Main.storyboard in Resources */,
 			);
@@ -209,10 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7184E6237C09DB00EE82C1 /* SimpleTableSectionViewController.swift in Sources */,
 				DC1CB49E2356C53C0034E0F6 /* ViewController.swift in Sources */,
+				DC0EE9112370194C00FABF29 /* NumbersViewController.swift in Sources */,
 				DC1CB49A2356C53C0034E0F6 /* AppDelegate.swift in Sources */,
+				DC7184E3237BF33E00EE82C1 /* SimpleTableViewController.swift in Sources */,
 				DC1CB49C2356C53C0034E0F6 /* SceneDelegate.swift in Sources */,
 				DCEA17862356FAD7008A923B /* SimpleValidationViewController.swift in Sources */,
+				DC651C96237A9637002E99B7 /* ExampleViewController.swift in Sources */,
+				DC718020237BD58800EE82C1 /* ImagePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

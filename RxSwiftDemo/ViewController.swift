@@ -11,6 +11,18 @@ import SnapKit
 
 class ViewController: UIViewController {
     
+    let dataSource = ["Example",
+                      "Numbers",
+                      "SimpleValidation",
+                      "ImagePicker",
+                      "SimpleTable"]
+    
+    let mapSource = ["ExampleViewController",
+                     "NumbersViewController",
+                     "SimpleValidationViewController",
+                     "ImagePickerViewController",
+                     "SimpleTableViewController"]
+    
     lazy var tableView: UITableView = {
         let temp = UITableView(frame: CGRect.zero, style: .plain)
         temp.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
@@ -31,16 +43,32 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return dataSource.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")
-        cell?.textLabel?.text = "cxc"
+        cell?.textLabel?.text = dataSource[indexPath.row]
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(SimpleValidationViewController(), animated: true)
+        let string = mapSource[indexPath.row]
+        // 1. 获取命名空间(CFBundleExecutable这个键对应的值就是项目名称,也就是命名空间)
+        guard let nameSpace = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else {
+               return
+        }
+        // 2. 将字符串转化为类
+        let name = nameSpace + "." + string
+        guard let cls = NSClassFromString(name) else {
+               return
+        }
+                    
+        // 3. 将anyClass转换为指定的类型
+        guard let vcCls = cls as? UIViewController.Type else {
+              return
+        }
+        let vc = vcCls.init()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
