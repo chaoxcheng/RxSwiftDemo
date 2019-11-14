@@ -15,13 +15,15 @@ class ViewController: UIViewController {
                       "Numbers",
                       "SimpleValidation",
                       "ImagePicker",
-                      "SimpleTable"]
+                      "SimpleTable",
+                      "SimpleTableSectioned"]
     
     let mapSource = ["ExampleViewController",
                      "NumbersViewController",
                      "SimpleValidationViewController",
                      "ImagePickerViewController",
-                     "SimpleTableViewController"]
+                     "SimpleTableViewController",
+                     "SimpleTableSectionViewController"]
     
     lazy var tableView: UITableView = {
         let temp = UITableView(frame: CGRect.zero, style: .plain)

@@ -21,6 +21,17 @@ class SimpleTableSectionViewController: UIViewController {
         return temp
     }()
     
+    let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, Double>>(
+        configureCell: { (_, tv, indexPath, element) in
+            let cell = tv.dequeueReusableCell(withIdentifier: "Cell")!
+            cell.textLabel?.text = "\(element) @ row \(indexPath.row)"
+            return cell
+        },
+        titleForHeaderInSection: { dataSource, sectionIndex in
+            return dataSource[sectionIndex].model
+        }
+    )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +40,48 @@ class SimpleTableSectionViewController: UIViewController {
             make.edges.equalTo(view)
         }
         
+        let items = Observable.just([
+            SectionModel(model: "First section", items: [
+                1.0,
+                2.0,
+                3.0
+            ]),
+            SectionModel(model: "Second section", items: [
+                1.0,
+                2.0,
+                3.0
+            ]),
+            SectionModel(model: "Third section", items: [
+                1.0,
+                2.0,
+                3.0
+            ])
+        ])
         
+        items
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+        
+        tableView.rx
+            .itemSelected
+            .map { indexPath in
+                return (indexPath, self.dataSource[indexPath])
+            }
+            .subscribe(onNext: { pair in
+                print("Tapped `\(pair.1)` @ \(pair.0)")
+            })
+            .disposed(by: disposeBag)
+        
+        tableView.rx
+        .setDelegate(self)
+        .disposed(by: disposeBag)
         
     }
+}
+
+extension SimpleTableSectionViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
 }
